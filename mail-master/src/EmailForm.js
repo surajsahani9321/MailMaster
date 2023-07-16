@@ -11,7 +11,8 @@ const EmailForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    emailjs.send('techsurajsahani', 'mailmaster', data, 'HvVruA2ogbtnZ9EKK')
+    emailjs
+      .send('techsurajsahani', 'mailmaster', data, 'HvVruA2ogbtnZ9EKK')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       })
@@ -31,6 +32,12 @@ const EmailForm = () => {
           fullWidth
           variant="outlined"
           margin="normal"
+          InputLabelProps={{
+            style: { color: '#fff', fontWeight: 'bold' },
+          }}
+          InputProps={{
+            style: { color: '#fff', fontWeight: 'bold' },
+          }}
         />
         <TextField
           label="Subject"
@@ -38,6 +45,12 @@ const EmailForm = () => {
           fullWidth
           variant="outlined"
           margin="normal"
+          InputLabelProps={{
+            style: { color: '#fff', fontWeight: 'bold' },
+          }}
+          InputProps={{
+            style: { color: '#fff', fontWeight: 'bold' },
+          }}
         />
         <TextField
           label="Message"
@@ -49,6 +62,12 @@ const EmailForm = () => {
           rows={4}
           variant="outlined"
           margin="normal"
+          InputLabelProps={{
+            style: { color: '#fff', fontWeight: 'bold' },
+          }}
+          InputProps={{
+            style: { color: '#fff', fontWeight: 'bold' },
+          }}
         />
         <Button type="submit" variant="contained" color="primary">
           Send Email

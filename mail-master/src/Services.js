@@ -37,9 +37,6 @@ const Services = () => {
 
   return (
     <Container maxWidth="md">
-      <Typography variant="h3" component="h1" align="center" gutterBottom>
-        Our Services
-      </Typography>
       <Grid container spacing={3}>
         {services.map((service, index) => (
           <Grow in key={index} timeout={index * 500}>
@@ -47,7 +44,7 @@ const Services = () => {
               <Card>
                 <CardMedia
                   component="img"
-                  height="200"
+                  height="150"
                   image={service.image}
                   alt={service.title}
                 />
@@ -69,4 +66,3 @@ const Services = () => {
 };
 
 export default Services;
-

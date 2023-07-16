@@ -15,16 +15,15 @@ const Profile = () => {
     <Container maxWidth="md">
       <Box
         sx={{
-          backgroundColor: '#fff',
+          backgroundColor: 'transparent',
           padding: '1.5rem',
           borderRadius: '4px',
-          boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
           textAlign: 'center',
         }}
       >
         <ProfileImage
           alt="Profile Picture"
-          src="/p1.jpg"
+          src="/static/p1.jpg"
           sx={{
             transition: 'all 0.3s ease-in-out',
             '&:hover': {
@@ -42,24 +41,23 @@ const Profile = () => {
           <strong>Gender:</strong> Male
         </Typography>
         <Typography variant="body1" align="center">
-          Full Stack Web Developer
+          <strong>Full Stack Web Developer</strong>
         </Typography>
       </Box>
       <Fade in timeout={1000}>
         <Box
           sx={{
-            backgroundColor: '#fff',
+            backgroundColor: 'transparent',
             padding: '1.5rem',
             borderRadius: '4px',
             marginTop: '2rem',
             textAlign: 'center',
-            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
           }}
         >
           <Typography variant="h5" gutterBottom>
             About MailMaster
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" sx={{ color: '#fff', fontWeight: 'bold' }}>
             MailMaster is a powerful email sending application that provides a seamless
             experience for sending emails with or without attachments. It simplifies the
             process of email communication and ensures reliable delivery of messages.
